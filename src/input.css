@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+  width: 100%;
+}
+li {
+  cursor: pointer;
+}
