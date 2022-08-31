@@ -9,7 +9,7 @@ nav li {
   padding: 0.7rem 1rem;
   border-radius: 5px;
  
-  transition: 0.7s;
+  transition: 0.6s;
   cursor: pointer;
 }
 nav li:hover {
@@ -22,8 +22,12 @@ h1 {
 }
 main {
   margin: auto;
-  width: 65%;
+  width: min(900px, 94%);
   border-radius: 6px;
+}
+main h1 {
+  max-width: 100%;
+  font-size: calc(3rem + 3vw);
 }
 main h2 {
   font-size: 1.7rem;

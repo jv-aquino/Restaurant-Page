@@ -8,6 +8,7 @@ const createNav = () => {
   items.forEach((item) => {
     const li = document.createElement('li');
     li.textContent = item;
+    li.id = item.toLowerCase();
     
     ul.appendChild(li);
   });
