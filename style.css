@@ -664,6 +664,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -672,12 +676,20 @@ video {
   padding: 3rem;
 }
 
-.pb-3 {
-  padding-bottom: 0.75rem;
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .pr-7 {
   padding-right: 1.75rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .pb-4 {
@@ -692,20 +704,12 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
 }
 
 .text-2xl {
@@ -760,7 +764,7 @@ nav {
 nav li {
   padding: 0.7rem 1rem;
   border-radius: 5px;
-  transition: 0.7s;
+  transition: 0.6s;
   cursor: pointer;
 }
 
@@ -775,8 +779,13 @@ h1 {
 
 main {
   margin: auto;
-  width: 65%;
+  width: min(900px, 94%);
   border-radius: 6px;
+}
+
+main h1 {
+  max-width: 100%;
+  font-size: calc(3rem + 3vw);
 }
 
 main h2 {
