@@ -664,6 +664,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -779,8 +783,9 @@ h1 {
 
 main {
   margin: auto;
-  width: min(900px, 94%);
+  width: min(850px, 92%);
   border-radius: 6px;
+  grid-template-columns: 1fr;
 }
 
 main h1 {
@@ -795,4 +800,31 @@ main h2 {
 main section p,
 main section li {
   font-size: 1.2rem;
+}
+
+.pizzaGrid {
+  width: min(850px, 92%);
+  justify-self: center;
+  display: grid;
+  gap: 40px 20px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+.pizzaGrid div {
+  border-radius: 3px;
+  background-color: #d8b4fe;
+  padding: 14px;
+  width: 90%;
+}
+
+.pizzaGrid img {
+  margin: auto;
+  height: 200px;
+  width: auto;
+}
+
+.pizzaGrid h2 {
+  font-size: calc(1.25rem + 1vw);
+  font-weight: bold;
+  color: #4c1d95;
 }
