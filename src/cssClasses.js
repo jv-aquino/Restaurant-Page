@@ -9,7 +9,7 @@ const addClasses = (item) => {
       classes = ["flex", "text-2xl", "flex-row", "justify-center", "gap-3", "p-5"];
       break;
     case 'MAIN':
-      classes = ['p-8', 'mb-10', 'grid', 'grid-flow-row', 'gap-8', 'justify-center', 'bg-zinc-900', 'text-zinc-50', 'border-purple-700', 'border-2'];
+      classes = ['p-7', 'mb-10', 'grid', 'grid-flow-row', 'gap-8', 'justify-center', 'bg-zinc-900', 'text-zinc-50', 'border-purple-700', 'border-2'];
       break;
     case 'H1':
       classes = ['m-auto', 'italic', 'bg-purple-700', 'p-5', 'pb-2', 'pr-7', 'border-zinc-50', 'border-4'];
