@@ -12,14 +12,26 @@ const loadNewPage = (section) => {
   switch(section) {
     case "home":
       page = createHome();
+
+      resetButtonsColor();
+      homeButton.classList.add('selected');
+
       break;
 
     case "menu":
       page = createMenu();
+
+      resetButtonsColor();
+      menuButton.classList.add('selected');
+
       break;
 
     case "contact":
       page = createContact();
+
+      resetButtonsColor();
+      contactButton.classList.add('selected');
+      
       break;
   }
 
@@ -30,9 +42,11 @@ const firstPageLoad = () => {
   const nav = createNav();
   contentDiv.appendChild(nav);
 
-  loadNewPage('home');
-
   activateButtons();
+  resetButtonsColor();
+  homeButton.classList.add("selected");
+
+  loadNewPage('home');
 }
 
 const changePage = (e) => {
@@ -50,5 +64,11 @@ const activateButtons = () => {
   menuButton.addEventListener('click', changePage);
   contactButton.addEventListener('click', changePage);
 };
+
+const resetButtonsColor = () => {
+  homeButton.classList.remove('selected');
+  menuButton.classList.remove('selected');
+  contactButton.classList.remove('selected');
+}
 
 firstPageLoad();
